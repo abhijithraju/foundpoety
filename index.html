@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="abhi.css" class="css"><title>Document</title>
-</head>
-<body>
-    
-<div id="dis" class="hj"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="abhi.css" class="css" />
+    <title>Document</title>
+  </head>
 
-</body>
-<script>
-   let p= ['The simple declarative sentence ','consists of a subject – the Latin translation,',' and that means transformation, of Ëpoke©menon – and predicate,',' which expresses the thing’s characteristics.','Who would dare to threaten this simple ','and fundamental relationship be- tween thing  and sentence,',' between the structure of the sentence ','and the structure of the thing? ','Nonetheless, we must ask: is the structure of the simple declarative sentence ','(the nexus of subject and predicate)',' the mirror image of the structure of the thing',' (the union of substance and accidents)? ','Or is it merely that, so represented, ','the structure of the thing is a projection of the structure of the sentence?','What could be more obvious than that man transposes the way he com- prehends things in statements into the structure of the thing itself? ','Yet this view, apparently critical but in reality overly hasty,',' has first to explain how the transposition of the sentence structure ','into the thing could be possible without the thing first becoming visible.','The issue as to what comes first',' and provides the standard,',' the structure of the sentence',' or that of the thing,',' remains, to this day, undecided.',' It may even be doubted whether, in this form, it is capable of a decision.'];
-// alert(p[3]);
+  <body>
+    <!-- <form>
+        <label for="user_input">Enter length:</label>
+        <input type="text" id="user_input" name="user_input" />
+        <input type="button" value="Submit" onclick="storeInput()" />
+    </form> -->
 
- //alert(p[rg]);
+    <div id="dis" class="hj"></div>
+  </body>
+  <script>
+    //p=['<pre>The simple declarative sentence                             </pre>',' <pre>              consists of a subject  the Latin translation </pre>','<pre>                   and that means transformation, of Ëpoke©menon  and predicate,</pre>','<pre>which expresses the things characteristics                </pre> ' ,'<pre>The</pre>','<pre> simple </pre>','<pre>declarative sentence</pre>','<pre>               consists of a subject            </pre>','<pre>               the Latin translation,</pre>','<pre>and that means transformation, of Ëpoke©menon  and predicate,</pre>','<pre>                which expresses the things                characteristics.</pre>','<pre>Who would dare to threaten this simple </pre>']
+    let p = [
+      "The simple declarative sentence ",
+      "<br>",
+      "consists of a subject – the Latin translation,",
+      " and that means transformation, of Ëpoke©menon – and predicate,",
+      " which expresses the thing’s characteristics.",
+      "Who would dare to threaten this simple ",
+      "<br>",
+      "and fundamental relationship be- tween thing  and sentence,",
+      " between the structure of the sentence ",
+      "and the structure of the thing? ",
+      "Nonetheless, we must ask: is the structure of the simple declarative sentence ",
+      "(the nexus of subject and predicate)",
+      " the mirror image of the structure of the thing",
+      "<br>",
+      " (the union of substance and accidents)? ",
+      "Or is it merely that, so represented, ",
+      "the structure of the thing is a projection of the structure of the sentence?",
+      "<br>",
+      "What could be more obvious than that man transposes the way he com- prehends things in statements into the structure of the thing itself? ",
+      "Yet this view, apparently critical but in reality overly hasty,",
+      " has first to explain how the transposition of the sentence structure ",
+      "<br>",
+      "into the thing could be possible without the thing first becoming visible.",
+      "The issue as to what comes first",
+      " and provides the standard,",
+      "<br>",
+      " the structure of the sentence",
+      " or that of the thing,",
+      " remains, to this day, undecided.",
+      "<br>",
+      " It may even be doubted whether, in this form, it is capable of a decision.",
+      "<br>",
+    ];
+    // var flag = 0;
+    // setInterval(() => {
+    //     function storeInput() {
+    //         let userInput = document.getElementById("user_input").value;
+    //         let storedInput = userInput;
+    //         let kj = storedInput;
 
+    //         var c = 0;
+    //         flag = 0;
+    //         var intervalId = setInterval(() => {
+    //             let rg = Math.floor(Math.random() * 4);
+    //             document.getElementById("dis").innerHTML += p[rg];
+    //             c++;
+    //             if (c == kj) {
+    //                 clearInterval(intervalId);
+    //             }
+    //         }, 500);
 
-
-//    23 srtings
-setInterval(() => {
-    let rg= Math.floor(Math.random() * 23) ; 
-    document.getElementById("dis").innerHTML+=p[rg];
-    
-}, 1000);
-
-// document.getElementById("elementID").innerHTML = "Hello World!";
-</script>
+    //     }
+    // }, 1000);
+    setInterval(() => {
+      let rg = Math.floor(Math.random() * 31);
+      document.getElementById("dis").innerHTML += p[rg];
+    }, 1000);
+  </script>
 </html>
