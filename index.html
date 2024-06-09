@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="abhi.css" class="css" />
+    <title>Document</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="abhi.css" class="css">
-    <title>found poetry</title>
-</head>
+  <body>
+    <!-- <form>
+        <label for="user_input">Enter length:</label>
+        <input type="text" id="user_input" name="user_input" />
+        <input type="button" value="Submit" onclick="storeInput()" />
+    </form> -->
 
-<body>
-    <div class="writing">
-        <h2> Apart from from the fixed data that stored in data base, this poem is generated from the random access
-            memory </h2>
-    </div>
-    <div class="comm">
-        <div class="left" id="dis2"></div>
-        <div class="allu">
+    <div id="dis" class="hj"></div>
+  </body>
+  <script>
+    //p=['<pre>The simple declarative sentence                             </pre>',' <pre>              consists of a subject  the Latin translation </pre>','<pre>                   and that means transformation, of Ëpoke©menon  and predicate,</pre>','<pre>which expresses the things characteristics                </pre> ' ,'<pre>The</pre>','<pre> simple </pre>','<pre>declarative sentence</pre>','<pre>               consists of a subject            </pre>','<pre>               the Latin translation,</pre>','<pre>and that means transformation, of Ëpoke©menon  and predicate,</pre>','<pre>                which expresses the things                characteristics.</pre>','<pre>Who would dare to threaten this simple </pre>']
+    let p = [
+      "The simple declarative sentence ",
+      "<br>",
+      "consists of a subject – the Latin translation,",
+      " and that means transformation, of Ëpoke©menon – and predicate,",
+      " which expresses the thing’s characteristics.",
+      "Who would dare to threaten this simple ",
+      "<br>",
+      "and fundamental relationship be- tween thing  and sentence,",
+      " between the structure of the sentence ",
+      "and the structure of the thing? ",
+      "Nonetheless, we must ask: is the structure of the simple declarative sentence ",
+      "(the nexus of subject and predicate)",
+      " the mirror image of the structure of the thing",
+      "<br>",
+      " (the union of substance and accidents)? ",
+      "Or is it merely that, so represented, ",
+      "the structure of the thing is a projection of the structure of the sentence?",
+      "<br>",
+      "What could be more obvious than that man transposes the way he com- prehends things in statements into the structure of the thing itself? ",
+      "Yet this view, apparently critical but in reality overly hasty,",
+      " has first to explain how the transposition of the sentence structure ",
+      "<br>",
+      "into the thing could be possible without the thing first becoming visible.",
+      "The issue as to what comes first",
+      " and provides the standard,",
+      "<br>",
+      " the structure of the sentence",
+      " or that of the thing,",
+      " remains, to this day, undecided.",
+      "<br>",
+      " It may even be doubted whether, in this form, it is capable of a decision.",
+      "<br>",
+    ];
+    // var flag = 0;
+    // setInterval(() => {
+    //     function storeInput() {
+    //         let userInput = document.getElementById("user_input").value;
+    //         let storedInput = userInput;
+    //         let kj = storedInput;
 
-            <div id="dis" class="hj"></div>
-            <div class="head" id="dis1"></div>
+    //         var c = 0;
+    //         flag = 0;
+    //         var intervalId = setInterval(() => {
+    //             let rg = Math.floor(Math.random() * 4);
+    //             document.getElementById("dis").innerHTML += p[rg];
+    //             c++;
+    //             if (c == kj) {
+    //                 clearInterval(intervalId);
+    //             }
+    //         }, 500);
 
-        </div>
-        <div class="right" id="dis3"></div>
-
-    </div>
-
-
-</body>
-<script>
-
-
-
-
-    let p = ['The simple declarative sentence ', ' consists of a subject – the Latin translation,', ' and that means transformation , of Ëpoke©menon – and predicate,', ' which expresses the thing’s characteristics.', ' Who would dare to threaten this simple ', ' and fundamental relationship be- tween thing  and sentence,', ' between the structure of the sentence ', ' and the structure of the thing? ', ' Nonetheless, we must ask: is the structure of the simple declarative sentence ', ' (the nexus of subject and predicate)', ' the mirror image of the structure of the thing', ' (the union of substance and accidents)? ', ' Or is it merely that, so represented, ', ' the structure of the thing is a projection of the structure of the sentence?', ' What could be more obvious than that man transposes the way he com- prehends things in statements into the structure of the thing itself? ', ' Yet this view, apparently critical but in reality overly hasty,', ' has first to explain how the transposition of the sentence structure ', ' into the thing could be possible without the thing first becoming visible.', ' The issue as to what comes first', ' and provides the standard,', ' the structure of the sentence', ' or that of the thing,', ' remains, to this day, undecided.', ' It may even be doubted whether, in this form, it is capable of a decision.'];
-    let p1 = [' <img src="1.png" > ', '<img src="2.png" > ', ' <img src="3.png" > ,', ' <img src="4.png" > ', '<img src="5.png" >  ', '<img src="6.png" >  ', '<img src="7.png" > ', ' <img src="8.png" > ', ' <img src="9.png" >  ', '<img src="10.jpg" >  ', '<img src="11.jpg" > ', '<img src="12.jpg" >  ', '<img src="13.jpg" > ', ' <img src="14.jpg" >  ', '<img src="15.jpg" > ', '<img src="16.jpg" > ', ' <img src="17.jpg" > ,', ' <img src="18.jpg" > ', ' <img src="19.jpg" > ', '<img src="20.jpg" > ', '<img src="21.jpg" > ', '<img src="22.jpg" > ', '<img src="23.jpg" > ', '<img src="24.jpg" > '];
-    let p2 = [' <img src="1.png" > ', '<img src="2.png" > ', ' <img src="3.png" > ,', ' <img src="4.png" > ', '<img src="5.png" >  ', '<img src="6.png" >  ', '<img src="7.png" > ', ' <img src="8.png" > ', ' <img src="9.png" >  ', '<img src="10.jpg" >  ', '<img src="11.jpg" > ', '<img src="12.jpg" >  ', '<img src="13.jpg" > ', ' <img src="14.jpg" >  ', '<img src="15.jpg" > ', '<img src="16.jpg" > ', ' <img src="17.jpg" > ,', ' <img src="18.jpg" > ', ' <img src="19.jpg" > ', '<img src="20.jpg" > ', '<img src="21.jpg" > ', '<img src="22.jpg" > ', '<img src="23.jpg" > ', '<img src="24.jpg" > '];
-    let p3 = [' <img src="1.png" > ', '<img src="2.png" > ', ' <img src="3.png" > ,', ' <img src="4.png" > ', '<img src="5.png" >  ', '<img src="6.png" >  ', '<img src="7.png" > ', ' <img src="8.png" > ', ' <img src="9.png" >  ', '<img src="10.jpg" >  ', '<img src="11.jpg" > ', '<img src="12.jpg" >  ', '<img src="13.jpg" > ', ' <img src="14.jpg" >  ', '<img src="15.jpg" > ', '<img src="16.jpg" > ', ' <img src="17.jpg" > ,', ' <img src="18.jpg" > ', ' <img src="19.jpg" > ', '<img src="20.jpg" > ', '<img src="21.jpg" > ', '<img src="22.jpg" > ', '<img src="23.jpg" > ', '<img src="24.jpg" > '];
-
-
-    // alert(p[3]);
-
-    //alert(p[rg]);
-
-
-
-    //    23 srtings
+    //     }
+    // }, 1000);
     setInterval(() => {
-        let rg = Math.floor(Math.random() * 23);
-        document.getElementById("dis").innerHTML += p[rg];
-
-        let rg1 = Math.floor(Math.random() * 23);
-        document.getElementById("dis1").innerHTML = p1[rg1];
-        let rg2 = Math.floor(Math.random() * 23);
-        document.getElementById("dis2").innerHTML += p2[rg2];
-        let rg3 = Math.floor(Math.random() * 23);
-        document.getElementById("dis3").innerHTML += p3[rg3];
-
+      let rg = Math.floor(Math.random() * 31);
+      document.getElementById("dis").innerHTML += p[rg];
     }, 1000);
-
-    // document.getElementById("elementID").innerHTML = "Hello World!";
-
-
-
-</script>
-
+  </script>
 </html>
