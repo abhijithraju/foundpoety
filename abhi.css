@@ -1,5 +1,33 @@
 .hj{
-    margin:10%;
+   
+    margin:10% 10% 0% 10%;
     color:rgba(136, 94, 46, 0.852);
+    size:100%;
+}
+
+
+
+
+
+
+img{
+width: 20%;
+
+}
+.head{
+margin: 0 10% 10% 10%;
+
+
+}
+.writing{
+   
+    text-align: center;
     
+  color: #000000;
+background: #ffffff;
+text-shadow: -2px 2px 0px #00e6e6, -5px 5px 0px #01cccc, -7px 7px 0px #00bdbd;
+}
+.comm{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
